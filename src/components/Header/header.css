@@ -1,0 +1,26 @@
+.bg-header{
+    background-color: var(--cor-chinese-black);
+    height: 7.407vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo-header{
+    height: 1.35rem;
+}
+
+.timeline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--cor-magenta); 
+    width: 0%;
+    transition: width 0.25s ease-out;
+}

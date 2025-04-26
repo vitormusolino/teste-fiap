@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-magenta: #ED145B;
+  --cor-chinese-black: #101010;
+  --cor-black: #000000;
+  --cor-pastel-blue: #ACC1CC;
+  --cor-davys-grey: #555555;
+  --cor-cultured: #F5F5F5;
+  --cor-spanish-blue: #006BB7;
+  --cor-silver-foil: #AFAFAF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.container {
+  max-width: 1600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
