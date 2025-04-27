@@ -29,8 +29,8 @@ export default function EducacaoTech() {
                         <p>Com um corpo docente formado por profissionais atuantes no mercado, a FIAP não ensina apenas tecnologia, mas também negócios, inovação e liderança. Seus cursos abrangem diversas áreas, incluindo:</p>
 
                         <div className="area">
-                            <div>
-                                <h3><span>/</span> Tecnologia e Desenvolvimento</h3>
+                            <div className='lista-areas'>
+                                <h3 className='paragrafo'><span>/</span> Tecnologia e Desenvolvimento</h3>
                                 <ul className='lista listas'>
                                     <li>Desenvolvimento de Software</li>
                                     <li>Inteligência Artificial</li>
@@ -39,15 +39,14 @@ export default function EducacaoTech() {
                                 </ul>
                             </div>
 
-                            <h3><span>/</span> UX/UI, Marketing Digital</h3>
-                            <h3><span>/</span> Metodologias e Gestão</h3>
+                            <h3 className='paragrafo'><span>/</span> UX/UI, Marketing Digital</h3>
+                            <h3 className='paragrafo'><span>/</span> Metodologias e Gestão</h3>
                         </div>
 
                         <p>Além disso, a instituição incentiva fortemente o uso dessas metodologias e outras abordagens inovadoras que fazem parte do dia a dia de grandes empresas.</p>
                     </div>
                 </div>
             </section>
-
             {isOpen && (
                 <div className="modal" onClick={() => setIsOpen(false)}>
                     <div className="modal-content">

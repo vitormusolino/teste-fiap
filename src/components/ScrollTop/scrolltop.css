@@ -1,0 +1,25 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid var(--cor-magenta);
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.1);
+}
+
+.scroll-icon {
+    width: 24px;
+    height: 24px;
+}
