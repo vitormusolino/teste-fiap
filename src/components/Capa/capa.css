@@ -92,6 +92,11 @@
     padding: 15px;
     border: 1px solid var(--cor-pastel-blue);
     border-radius: 50%;
+    transition: 0.5s;
+}
+
+.scroll-down img:hover{
+    scale: 1.1;
 }
 
 .scroll-down h3{

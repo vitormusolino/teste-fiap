@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 12rem;
+    padding-top: 20rem;
 }
 
 .title-saber-mais{
@@ -19,9 +19,10 @@
 
 .button-contato{
     text-decoration: none;
+    text-align: center;
     color: var(--cor-magenta);
     border: 2px solid var(--cor-magenta);
-    padding: 20px 30px;
+    padding: 1.25rem 1.87rem;
     transition: 0.5s;
 }
 

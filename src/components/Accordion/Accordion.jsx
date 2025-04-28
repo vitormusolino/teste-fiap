@@ -2,6 +2,7 @@ import { useState } from 'react';
 import IconeAbrir from '../../assets/svg/cursor-open.svg';
 import IconeFechar from '../../assets/svg/cursor-close.svg';
 import './accordion.css';
+import SaberMais from '../SaberMais/SaberMais';
 
 const data = [
     {
@@ -30,33 +31,42 @@ export default function Accordion() {
     };
 
     return (
-        <section className="accordion-container">
-            <div className='container'>
-                <h1 className="accordion-title titulo">NOSSA ESTRUTURA</h1>
-                
-                {data.map((item, index) => (
-                    <div
-                        key={index}
-                        className={`accordion-item ${activeIndex === index ? 'active' : ''}`}
-                    >
-                        <div className="accordion-header" onClick={() => toggle(index)}>
-                            <h2 className='titulo-accordion'>{item.title}</h2>
-                            <img
-                                src={activeIndex === index ? IconeFechar : IconeAbrir}
-                                alt={activeIndex === index ? "Fechar" : "Abrir"}
-                                className="accordion-icon"
-                            />
-                        </div>
-                        <div className={`accordion-content ${activeIndex === index ? 'open' : ''}`}>
-                            <p className='paragrafo'>{item.content}</p>
-                        </div>
+        <>
+            <section className="accordion-container">
+                <div className='container'>
+                    <h1 className="accordion-title titulo">NOSSA ESTRUTURA</h1>
+
+                    <div className="accordion-list">
+                        {data.map((item, index) => (
+                            <div
+                                key={index}
+                                className={`accordion-item ${activeIndex === index ? 'active' : ''}`}
+                            >
+                                <div className="accordion-header" onClick={() => toggle(index)}>
+                                    <h2 className='titulo-accordion'>{item.title}</h2>
+                                    <img
+                                        src={activeIndex === index ? IconeFechar : IconeAbrir}
+                                        alt={activeIndex === index ? "Fechar" : "Abrir"}
+                                        className="accordion-icon"
+                                    />
+                                </div>
+                                <div className={`accordion-content ${activeIndex === index ? 'open' : ''}`}>
+                                    <p className='paragrafo'>{item.content}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                ))}
-                <div className='bg-blur'>
-                    <div className='color color1'></div>
-                    <div className='color color2'></div>
+
+                    <div className='bg-blur'>
+                        <div className='color color1'></div>
+                        <div className='color color2'></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div>
+                    <SaberMais />
+                </div>
+            </section>
+
+        </>
     );
 }

@@ -12,11 +12,12 @@
     align-items: center;
     justify-content: center;
     background: transparent;
-    border: 2px solid var(--cor-magenta);
+    border: 1px solid var(--cor-magenta);
 }
 
 .scroll-to-top:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 5px 2px var(--cor-magenta);
 }
 
 .scroll-icon {
