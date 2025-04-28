@@ -1,0 +1,51 @@
+.accordion-container {
+    background: var(--cor-black);
+    color: var(--cor-pastel-blue);
+    padding: 5rem 0;
+}
+
+.accordion-title {
+    padding: 5rem 0;
+}
+
+.accordion-item {
+    font-family: 'gotham_bold';
+    border-top: 2px solid var(--cor-davys-grey);
+    padding: 1.5rem 0;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header h2 {
+    font-family: 'gotham_bold';
+    font-size: 	1.56rem;
+    margin: 1.25rem 0;
+}   
+
+.accordion-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 0.5s;
+}
+
+.accordion-icon:hover {
+    scale: 1.1;
+}
+
+.accordion-content {
+    margin: 0;
+    font-family: 'gotham_book';
+    font-size: 1.125rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.accordion-content.open {
+    max-height: 500px; 
+}

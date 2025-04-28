@@ -132,7 +132,7 @@
     .bg-capa {
         background: 
           linear-gradient(to right, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%),
-          linear-gradient(to top, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 30%),
+          linear-gradient(to top, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 30%),
           url('../../assets/imgs/header.jpg') no-repeat center center;
         background-size: cover;
         position: relative;
@@ -146,7 +146,9 @@
 
     .text-area {
         height: 30vh;
-        width: 150%;
+        padding: 0;
+        margin: 0;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -154,14 +156,15 @@
     }
 
     .text-area p {
-        padding: 20px;
-        width: 80%;
+        padding: 10px;
+        width: 100%;
     }
 }
 
 @media (max-width: 600px) {
     .content{
-        padding: 0px 20px;
+        padding: 20px 20px;
+        margin-top: 50px;
     }
 
     .content p{

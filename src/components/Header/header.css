@@ -1,6 +1,6 @@
-.bg-header{
+.bg-header {
     background-color: var(--cor-chinese-black);
-    height: 7.407vh;
+    height: 4rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -9,7 +9,10 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    box-sizing: border-box;
+    max-width: 100%;
 }
+
 
 .logo-header{
     height: 1.35rem;

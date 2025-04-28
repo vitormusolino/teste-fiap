@@ -1,12 +1,13 @@
 .bg-educacao {
-    height: 120vh;
-    padding-top: 12rem;
+    height: 100%;
+    padding: 10rem 0 8rem 0;
 }
 
 .educacao-content {
-    padding-top: 5rem;
+    padding: 5rem 0;
     display: flex;
     justify-content: space-around;
+    gap: 5rem;
     font-family: 'gotham_book';
     color: var(--cor-davys-grey);
 }
@@ -16,12 +17,17 @@
 }
 
 .div-img {
-    max-width: 43.7rem;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    text-wrap: wrap;
 }
 
-.div-img img {
+.div-img p{
+    max-width: 150rem;
+}
+
+.div-img img{
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
     max-width: 100%;
@@ -57,7 +63,7 @@
 
 
 .areas-fiap {
-    max-width: 43.7rem;
+    max-width: 100%;
     font-size: 1.25rem;
 }
 
@@ -108,12 +114,15 @@
 }
 
 @media(max-width:1200px){
-    .bg-educacao{
-        height: 170vh;
-    }
     .educacao-content{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 5rem;
+    }
+    .title{
+        justify-content: center;
+        align-items: center;
     }
 
     .areas-fiap{
@@ -128,15 +137,18 @@
         max-width: 100%;
         max-height: none;
     }
+
+    .title{
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media(max-width:600px){
     .educacao-content{
         flex-direction: column;
         gap: 5rem;
+        padding: 3rem 0;
     }
 
-    .areas-fiap{
-        margin-bottom: 5rem;
-    }
 }
