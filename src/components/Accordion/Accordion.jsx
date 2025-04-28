@@ -33,13 +33,14 @@ export default function Accordion() {
         <section className="accordion-container">
             <div className='container'>
                 <h1 className="accordion-title titulo">NOSSA ESTRUTURA</h1>
+                
                 {data.map((item, index) => (
                     <div
                         key={index}
                         className={`accordion-item ${activeIndex === index ? 'active' : ''}`}
                     >
                         <div className="accordion-header" onClick={() => toggle(index)}>
-                            <h2>{item.title}</h2>
+                            <h2 className='titulo-accordion'>{item.title}</h2>
                             <img
                                 src={activeIndex === index ? IconeFechar : IconeAbrir}
                                 alt={activeIndex === index ? "Fechar" : "Abrir"}
@@ -47,10 +48,14 @@ export default function Accordion() {
                             />
                         </div>
                         <div className={`accordion-content ${activeIndex === index ? 'open' : ''}`}>
-                            <p>{item.content}</p>
+                            <p className='paragrafo'>{item.content}</p>
                         </div>
                     </div>
                 ))}
+                <div className='bg-blur'>
+                    <div className='color color1'></div>
+                    <div className='color color2'></div>
+                </div>
             </div>
         </section>
     );

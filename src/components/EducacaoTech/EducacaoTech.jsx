@@ -22,16 +22,16 @@ export default function EducacaoTech() {
                             onClick={() => setIsOpen(true)}
                         />
 
-                        <span>Figura 1 - Logotipo da FIAP NEXT</span>
+                        <span className='legendas'>Figura 1 - Logotipo da FIAP NEXT</span>
                     </div>
 
                     <div className='areas-fiap paragrafo'>
                         <p>Com um corpo docente formado por profissionais atuantes no mercado, a FIAP não ensina apenas tecnologia, mas também negócios, inovação e liderança. Seus cursos abrangem diversas áreas, incluindo:</p>
 
-                        <div className="area">
+                        <div className="area listas">
                             <div className='lista-areas'>
                                 <h3 className='paragrafo'><span>/</span> Tecnologia e Desenvolvimento</h3>
-                                <ul className='lista listas'>
+                                <ul className='lista sublistas'>
                                     <li>Desenvolvimento de Software</li>
                                     <li>Inteligência Artificial</li>
                                     <li>Data Science</li>

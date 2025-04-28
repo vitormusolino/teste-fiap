@@ -1,0 +1,31 @@
+.bg-sabermais{
+    background-color: var(--cor-black);
+    height: 80vh;
+}
+
+.sabermais-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12rem;
+}
+
+.title-saber-mais{
+    color: var(--cor-pastel-blue);
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.button-contato{
+    text-decoration: none;
+    color: var(--cor-magenta);
+    border: 2px solid var(--cor-magenta);
+    padding: 20px 30px;
+    transition: 0.5s;
+}
+
+.button-contato:hover{
+    background-color: var(--cor-magenta);
+    color: var(--cor-black);
+}

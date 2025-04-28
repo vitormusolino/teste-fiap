@@ -32,19 +32,51 @@
   font-family: 'gotham_medium', sans-serif;
 }
 
+.titulo-accordion{
+  font-family: 'gotham_bold',sans-serif;
+  font-size: 1.56rem;
+}
+
 .paragrafo,
 .listas{
   font-size: 1.25rem;
   font-family: 'gotham_book', sans-serif;
 }
 
+.legendas{
+  font-family: "roboto_regular", sans-serif;
+  font-size: 1rem;
+}
+
+.sublistas{
+  font-family: 'gotham_book', sans-serif;
+  font-size: 1.1rem;
+}
+
+.botao{
+  font-family: 'gotham_medium', sans-serif;
+  font-size: 1.87rem;
+}
+
 @media(max-width: 900px){
   .titulo{
     font-size: 2.5rem;
   }
+  .titulo-accordion{
+    font-size: 1.5rem;
+  }
   .paragrafo,
   .listas{
     font-size: 1.125rem;
+  }
+  .legendas{
+    font-size: 0.75rem;
+  }
+  .sublistas{
+    font-size: 1rem;
+  }
+  .botao{
+   font-size:1.25rem ; 
   }
 }
 

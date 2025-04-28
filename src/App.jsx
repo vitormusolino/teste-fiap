@@ -6,6 +6,7 @@ import EducacaoTech from './components/EducacaoTech/EducacaoTech.jsx';
 import BreakImage from './components/BreakImage/BreakImage.jsx';
 import ScrollTop from './components/ScrollTop/ScrollTop.jsx';
 import Accordion from './components/Accordion/Accordion.jsx';
+import SaberMais from './components/SaberMais/SaberMais.jsx';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <EducacaoTech/>
       <BreakImage/>
       <Accordion/>
+      <SaberMais/>
     </>
   )
 }
