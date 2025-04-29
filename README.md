@@ -2,7 +2,7 @@
 
 Projeto desenvolvido utilizando React e Vite para construção e desenvolvimento rápidos.
 
-## 🚀 Como rodar o projeto localmente
+## 🚀 Como rodar o projeto
 
 ### 1. Clonar o repositório
 
