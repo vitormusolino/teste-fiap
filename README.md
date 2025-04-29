@@ -1,4 +1,4 @@
-# Teste Técnico - Projeto React com Vite
+# Teste Técnico FIAP - Projeto React com Vite
 
 Projeto desenvolvido utilizando React e Vite para construção e desenvolvimento rápidos.
 
